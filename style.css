@@ -1,0 +1,180 @@
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.caixa-conteudo {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.cabecalho {
+  background-color: #fff;
+}
+
+.cabecalho-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+}
+
+.cabecalho-logo {
+  height: 40px;
+  margin-right: 15px;
+}
+
+.cabecalho-titulo {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.banner {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 22px 70px 4px inset;
+}
+
+.banner-conteudo {
+  height: 420px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.banner-conteudo-escrito {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.banner-conteudo-imagem {
+  flex-basis: 50%;
+  background: url('imagens/banner.png') center no-repeat;
+  background-size: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-conteudo {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .banner-conteudo-imagem {
+    background-size: contain;
+  }
+}
+
+.produtos-conteudo {
+  padding: 60px 0;
+}
+
+.produtos-titulo {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.produtos-caixa {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.produto {
+  flex-basis: 100%;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 600px) {
+  .produto {
+    flex-basis: calc((100% - (20px * 1)) / 2);
+  }
+}
+
+@media only screen and (min-width: 1110px) {
+  .produto {
+    flex-basis: calc((100% - (20px * 2)) / 3);
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .produto {
+    flex-basis: calc((100% - (20px * 3)) / 4);
+  }
+}
+
+.produto-imagem {
+  width: 100%;
+}
+
+.produto-informacoes {
+  flex-grow: 1;
+}
+
+.produto-compra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.produto-preco {
+  font-weight: bold;
+}
+
+.produto-botao-comprar {
+  border: none;
+  background-color: #88d938;
+  height: 30px;
+  padding: 0 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.produto-botao-comprar:hover {
+  background-color: #7cbf38;
+}
+.formulario__caixa {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #7cbf38;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rodape {
+  background-color: rgb(225, 225, 225);
+  padding: 40px 0;
+}
+
+.rodape-titulo {
+  text-align: center;
+}
+
+.rodape-contato {
+  margin: 0;
+  text-align: center;
+}
